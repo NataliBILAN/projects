@@ -1,0 +1,22 @@
+
+.container{
+    width: 1170px;
+}
+header{
+    padding: 20px;
+    background-color: #09090d;
+}
+.main-menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.main-menu a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Lato', sans-serif; */
