@@ -1,22 +1,122 @@
-
-.container{
-    width: 1170px;
+h2,
+p {
+    margin-top: 0;
 }
-header{
-    padding: 20px;
+
+.logo img {
+    display: block;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+
+header {
     background-color: #09090d;
 }
-.main-menu{
+
+.main-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
+    padding: 20px 0;
+    margin: 0;
 }
-.main-menu a{
+
+.main-menu a {
+    position: relative;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    font-weight: 400;
+    color: #a4a4a4;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Lato', sans-serif; */
+.main-menu a:hover {
+    color: #ffffff;
+}
+.main-menu a::after, a::before{
+    display: block;
+    position: absolute;    
+    left: 0;
+    
+    width: 0;
+    height: 2px;
+    background-color: #ff0036;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+.main-menu a::after{
+    top: 30px;
+}
+.main-menu a::before{
+    bottom: 30px;
+}
+.main-menu a:hover::after{
+    width: 100%;
+}
+.main-menu a:hover::before{
+    width: 100%;
+}
+.banner {
+    background: url(../img/banner.jpg) no-repeat center rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    min-height: 650px;
+    padding: 170px 20px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.accent {
+    color: #ff0036;
+}
+
+.description {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 40px;
+
+}
+
+.features,
+.psd {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #09090d;
+
+}
+
+.features:hover {
+    background-color: #ff0036;
+}
+
+.psd:hover {
+    background-color: #ff0036;
+}
+
+/* section About US */
+.about{
+    padding: 100px 20px;
+}
+.about .title{
+    color: #09090d;
+}
+.about p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #505050;
+    margin-bottom: 100px;
+   
+}
