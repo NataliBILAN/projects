@@ -1,6 +1,7 @@
 h2,
+h3,
 p {
-    margin-top: 0;
+    margin: 0;
 }
 
 .logo img {
@@ -13,7 +14,14 @@ p {
 header {
     background-color: #09090d;
 }
-
+.header-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    flex: 0 1 68%;
+    align-self: center;
+}
 .main-menu {
     display: flex;
     justify-content: space-between;
@@ -111,7 +119,10 @@ header {
     padding: 100px 20px;
 }
 .about .title{
-    color: #09090d;
+    color: #262626;
+}
+.about .intro{
+    margin-bottom: 40px;
 }
 .about p{
     font-family: 'Lato', sans-serif;
@@ -120,3 +131,91 @@ header {
     margin-bottom: 100px;
    
 }
+.subtitle{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #262626;
+    margin-left: 56px;
+}
+.gray-accent{
+    display: flex;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 16px 0 16px 26px;
+    margin-bottom: 10px;
+}
+.about .who-is{
+    display: none;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.fa-plus, .fa-minus{
+    cursor: pointer;
+}
+.info .fa-minus{
+    display: none;
+}
+.our-photo{
+    display: flex;
+    position: relative;  
+    min-height: 500px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+}
+.our-photo::after{
+    position: absolute;
+    bottom: -120px;
+    left: -144px;
+    content: "";
+    width: 300px;
+    height: 3px;
+    background-color: #09090d;
+}
+.our-photo img{
+    display: block;
+    margin: 0 auto;
+}
+.our-photo img:nth-child(2){
+    position: absolute;
+    top: -24px;
+    left: 100px;
+    z-index: 100;
+}
+.our-photo img:nth-child(3){
+    position: absolute;
+    top: 0;
+    right: -54px;
+}
+.our-photo img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 6px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.advantage{
+    padding-top: 100px;
+}
+.advantage .subtitle{
+    text-align: center;
+}
+.advantage .subtitle::before{
+    position: absolute;
+    left: 0px;
+    top: 18px;
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.advantage .subtitle::before{
+    background: url(../img/heart.svg) center no-repeat;
+}
+
+  
