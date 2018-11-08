@@ -1,7 +1,13 @@
 'use strict'
 $(function(){
+    var $page = $('html, body');
+    $('.main-menu a[href*="#"]').click(function(){ 
+        $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 99
+    }, 700);
+    return false;
+});
     $('.fa-minus').click(function(){
-        // $(this).parent().children('.who-is').toggle('normal');
         $(this).parent().siblings('.who-is').hide(1500);
         $(this).parent().children('.fa-plus').show();
         $(this).parent().children('.subtitle, .fa-minus').css('color', '#262626');
@@ -11,16 +17,17 @@ $(function(){
     $('.fa-plus').click(function(){
         $(this).parent().siblings('.who-is').fadeToggle(1500);
         $(this).parent().children('.subtitle, .fa-minus').css('color', 'red');
-        // $('.subtitle, .fa-minus').css('color', 'red');
-        // $('.who-is').fadeToggle();
         $(this).parent().children('.fa-minus').show();
         $(this).parent().children('.fa-plus').hide();
-        // $('.fa-minus').show();
-        // $('.fa-plus').hide();
         return false;
     });
 
-    $('#nav-toggle').click(function(){
+    $('#nav-toggle, .main-menu li a').click(function(){
         $('.main-menu').toggleClass('menu-open');
      });
+     $(document).click(function(event) {
+        if ($(event.target).closest("#nav-toggle").length ) return;
+        $('.main-menu').removeClass('menu-open');
+        event.stopPropagation();
+    });
 })(jQuery);
