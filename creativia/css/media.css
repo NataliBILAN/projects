@@ -1,3 +1,50 @@
+@media screen and (max-width: 767px){
+    .our-photo{
+        flex-direction: column;
+    }
+    .our-photo img{
+       
+        width: 60%;
+        top: 0;
+        left: 0;
+    }
+    .our-photo img:nth-child(1){
+        position: static;
+        margin-top: 10px;
+    }
+    .our-photo img:nth-child(2){
+        position: static;
+    }
+    .our-photo img:nth-child(3){
+        position: static;
+        margin-bottom: 30px;
+    }
+.portfolio-list{
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.portfolio-list a{
+    flex: 50%;
+    margin: auto;
+}
+.gallery{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ .gallery img{
+     width: 300px;
+     height: 300px;
+ }
+ .company img:nth-of-type(odd){
+     margin-right: 0;
+ }
+ .card{
+    margin: 0 0 20px;
+}
+}
 @media (max-width: 992px) {
    
     .logo img{
@@ -70,16 +117,26 @@
         background-color: rgba(0,0,0,0.8);
         overflow: auto;
     }
+    .about p{
+        margin-bottom: 30px;
+    }
+    .team-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
+}
 
+   
+  /* @media (min-width: 769px) and (max-width: 1399px){
+      .gallery{
+          width: 80%;
+          flex-wrap: wrap;
+         justify-content: center;
+      }
+    
+  } */
 
-
-
-
-    .our-photo{
-        flex-direction: column;
-    }
-    .our-photo img{
-        width: 60%;
-    }
+  @media screen and (max-width: 1024px){
+  
   }
