@@ -308,9 +308,12 @@ header {
 
 }
 .clients p{
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    color: #505050;
     margin-bottom: 90px;
+}
+.clients p, .services p, .team p, .about p, .find-us p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;   
     text-align: center;
 }
 .clients img{
@@ -356,8 +359,7 @@ header {
 }
 .team p{
     color:#ffffff;
-    margin-bottom: 90px;
-    text-align: center;    
+    margin-bottom: 90px;    
 }
 .team img{
     display: block;
@@ -388,9 +390,9 @@ header {
     justify-content: center;
     margin: auto;
 }
-.fa-facebook-f,
-.fa-twitter,
-.fa-google-plus-g{
+.socials .fa-facebook-f,
+.socials .fa-twitter,
+.socials .fa-google-plus-g{
     font-size: 40px;
     margin-right: 15px;
 }
@@ -437,3 +439,119 @@ header {
 .team-list{
     display: flex;
 }
+
+/* Section SERVICES */
+.services{
+    padding: 100px 10px;
+}
+.services .title{
+    color: #262626;
+}
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.services-item{
+    flex: 45%;
+}
+.subtitle-wrap{
+    display: flex;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+.services p{
+    color: #505050;
+    margin-bottom: 90px;
+}
+.services .services-list p{
+    padding: 30px;
+    background-color: #a4a4a4;
+    color: #ffffff;
+}
+.fa-code, .fa-html5, .fa-wordpress-simple, .fa-tablet-alt, .fa-pencil-alt, .fa-laptop{
+    font-size: 26px;
+}
+.services .services-list li:nth-of-type(odd){
+    margin-right: 30px;
+}
+.services-item:hover .fa-code{
+    color: #ff0036;
+}
+.services-item:hover .fa-html5{
+    color: #ff0036;
+}
+.services-item:hover .fa-wordpress-simple{
+    color: #ff0036;
+}
+.services-item:hover .fa-tablet-alt{
+    color: #ff0036;
+}
+.services-item:hover .fa-pencil-alt{
+    color: #ff0036;
+}
+.services-item:hover .fa-laptop{
+    color: #ff0036;
+}
+
+.services-item:hover .subtitle{
+    color: #ff0036;
+}
+
+/* Section CONTACT */
+
+.follow{
+    padding: 140px 10px;
+    min-height: 380px;
+    background-image: url(../img/banner.jpg), linear-gradient(to bottom, #959595 0%, #1b1b1b 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.follow .title{
+    margin-bottom: 50px;
+}
+.follow .socials-contact .fa-facebook-f, .fa-twitter, .fa-pinterest-p, .fa-google-plus-g{
+    font-size: 40px;
+    color: #d34836;
+    margin-right: 50px;
+}
+.follow .socials-contact .fa-google-plus-g{
+    margin-right: 0;
+}
+.follow .socials-contact .fa-facebook-f:hover{
+    color: #f0f0f0;
+}
+.follow .socials-contact .fa-twitter:hover{
+    color: #f0f0f0;
+}
+.follow .socials-contact .fa-pinterest-p:hover{
+    color: #f0f0f0;
+}
+.follow .socials-contact .fa-google-plus-g:hover{
+    color: #f0f0f0;
+}
+.find-us{
+    padding: 100px 10px 10px;
+}
+.find-us .title{
+    color: #262626;
+}
+.find-us p{
+    margin-bottom: 90px;
+}
+.find-us iframe{
+    width: 1200px;
+    height: 600px;
+}
+
+.footer{
+    padding: 20px 10px;
+    background-color: #262626;
+}
+.footer .title{
+    color: #5e5e5e;
+    margin-bottom: 0;
+}
+  
+  

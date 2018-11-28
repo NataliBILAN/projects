@@ -128,14 +128,14 @@
 }
 
    
-  /* @media (min-width: 769px) and (max-width: 1399px){
+  @media (min-width: 768px) and (max-width: 1399px){
       .gallery{
           width: 80%;
           flex-wrap: wrap;
          justify-content: center;
       }
     
-  } */
+  }
 
   @media screen and (max-width: 1024px){
   
