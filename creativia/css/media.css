@@ -44,6 +44,17 @@
  .card{
     margin: 0 0 20px;
 }
+
+.services-list .subtitle{
+    margin: 0 auto;
+    
+}
+.services .services-list li:nth-of-type(odd){
+    margin-right: 0;
+}
+.services p:nth-child(6){
+    margin-bottom: 0;
+}
 }
 @media (max-width: 992px) {
    
@@ -124,6 +135,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .services{
+        padding-bottom: 0;
+    }
     
 }
 
@@ -134,9 +148,16 @@
           flex-wrap: wrap;
          justify-content: center;
       }
+      .services-item{
+          flex: 45%;
+      }
     
   }
-
+  @media (min-width: 768px) and (max-width: 1399px){
+  .our-photo img:nth-child(3){
+      right: 70px;
+  }
+  }
   @media screen and (max-width: 1024px){
   
   }

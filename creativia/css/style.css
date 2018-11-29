@@ -44,7 +44,7 @@ header {
 .main-menu a:hover {
     color: #ffffff;
 }
-.main-menu a::after, a::before{
+.main-menu a::after, .main-menu a::before{
     display: block;
     position: absolute;    
     left: 0;    
@@ -206,21 +206,7 @@ header {
     visibility: visible;
     animation-delay: 3s;
 }
-.fadeInUp{
-  
-    animation-name: fadeInUp;
-}
-@keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translate3d(100%, 0, 0);
-    }
-    
-    100% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-  }
-}
+
 .info{
     display: flex;
     flex-direction: row;
@@ -400,7 +386,7 @@ header {
     
     color: #3b5998;
 }
-.fa-twitter{
+.socials .fa-twitter{
     color: #00aced;
 }
 .fa-google-plus-g{
@@ -452,9 +438,9 @@ header {
     flex-wrap: wrap;
     list-style: none;
 }
-.services-item{
+/* .services-item{
     flex: 45%;
-}
+} */
 .subtitle-wrap{
     display: flex;
     margin-bottom: 40px;
@@ -474,6 +460,9 @@ header {
 }
 .services .services-list li:nth-of-type(odd){
     margin-right: 30px;
+}
+.services-item .subtitle{
+    margin: 0 auto;
 }
 .services-item:hover .fa-code{
     color: #ff0036;
@@ -540,11 +529,24 @@ header {
 .find-us p{
     margin-bottom: 90px;
 }
-.find-us iframe{
-    width: 1200px;
-    height: 600px;
+.iframe-wrap{
+    display: flex;
+    margin: 0 auto;
 }
 
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 .footer{
     padding: 20px 10px;
     background-color: #262626;
