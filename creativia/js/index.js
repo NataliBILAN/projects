@@ -4,7 +4,7 @@ $(function () {
     $('.main-menu a[href*="#"], .to-page-nav').click(function () {
         $page.animate({
             scrollTop: $($.attr(this, 'href')).offset().top - 99
-        }, 700);
+        }, 900);
         return false;
     });
     $('.fa-minus').click(function () {
